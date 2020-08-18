@@ -1,6 +1,6 @@
 {
   "name": "ng-packager-demo",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-lib": "ng-packagr -p super-lib/package.json"
+    "build-lib": "ng-packagr -p super-lib/package.json",
+    "build-super-lib": "ng build super-lib",
+    "build-yoon-lib": "ng build yoon-lib",
+    "pack-yoon-lib": "cd dist/yoon-lib && npm pack"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@yoonjo/yoon-lib": "0.0.1",
     "rxjs": "~6.4.0",
     "super-lib": "file:super-lib/dist",
     "tslib": "^1.10.0",
@@ -27,6 +31,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.23",
+    "@angular-devkit/build-ng-packagr": "~0.803.29",
     "@angular/cli": "~8.3.23",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",

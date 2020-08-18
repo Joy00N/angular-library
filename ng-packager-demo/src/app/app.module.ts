@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SuperLibModule } from 'super-lib';
+import { YoonLibComponent, YoonLibModule } from '@yoonjo/yoon-lib';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { SuperLibModule } from 'super-lib';
   ],
   imports: [
     BrowserModule,
-    SuperLibModule
+    SuperLibModule,
+    YoonLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

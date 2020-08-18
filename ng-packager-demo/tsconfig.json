@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "yoon-lib": [
+        "dist/yoon-lib"
+      ],
+      "yoon-lib/*": [
+        "dist/yoon-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
